@@ -1,0 +1,29 @@
+<span
+  #sliderRoot
+  id="sliderRoot"
+  (click)="onClick($event)"
+  class="root relative flex w-full overflow-hidden items-center select-none"
+  data-orientation="horizontal"
+  [attr.data-clicked]="rootClicked"
+>
+  <span class="track bg-orange-400 w-full relative grow rounded-full h-[6px]">
+    <span
+      data-orientation="horizontal "
+      nsSliderRange
+      class="range bg-slate-400 h-full w-full"
+    ></span>
+  </span>
+
+  <span
+    #sliderThumb
+    class="thumb h-5 w-5 rounded-full bg-green p-2"
+    cdkDragLockAxis="x"
+    cdkDrag
+    stopPropagation
+    (cdkDragStarted)="dragStarted($event)"
+    (cdkDragEnded)="dragEnd($event)"
+    (cdkDragMoved)="dragMoved($event)"
+  ></span>
+</span>
+
+<p>{{ value }}</p>

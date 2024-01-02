@@ -1,0 +1,991 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "^17.0.0",
+    "@angular/cdk": "^17.0.0",
+    "@angular/common": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/core": "^17.0.0",
+    "@angular/forms": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@angular/router": "^17.0.0",
+    "@ng-icons/core": "^25.1.0",
+    "@ng-icons/radix-icons": "^25.1.0",
+    "@spartan-ng/ui-core": "^0.0.1-alpha.319",
+    "@spartan-ng/ui-menu-brain": "0.0.1-alpha.319",
+    "@spartan-ng/ui-switch-brain": "0.0.1-alpha.319",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^1.2.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.8",
+    "@angular/cli": "^17.0.8",
+    "@angular/compiler-cli": "^17.0.0",
+    "@spartan-ng/cli": "^0.0.1-alpha.331",
+    "@types/jasmine": "~5.1.0",
+    "autoprefixer": "^10.4.16",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss": "^8.4.32",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "^3.4.0",
+    "tailwindcss-animate": "^1.0.6",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {
+    "@spartan-ng/ui-checkbox-helm": [
+      ".\\ui-checkbox-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-icon-helm": [
+      ".\\ui-icon-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-button-helm": [
+      ".\\components/ui-button-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-menu-helm": [
+      ".\\components/ui-menu-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-switch-helm": [
+      ".\\components/ui-switch-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-input-helm": [
+      ".\\src/app/shared/ui-input-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-label-helm": [
+      ".\\src/app/shared/ui-label-helm/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "tech-asap-ng": [
+        {
+          "file": ".editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "5331566439708925252"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17038929134016848735"
+        },
+        {
+          "file": ".vscode/settings.json",
+          "hash": "16477039076188456572"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "5336636969995539451"
+        },
+        {
+          "file": "README.md",
+          "hash": "6764347502263271562"
+        },
+        {
+          "file": "angular.json",
+          "hash": "6667651587836765936"
+        },
+        {
+          "file": "fiveserver.config.js",
+          "hash": "2654287628808654100"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "17613645662891740750"
+        },
+        {
+          "file": "package.json",
+          "hash": "10369949263901345236",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@ng-icons/core",
+            "npm:@ng-icons/radix-icons",
+            "npm:@spartan-ng/ui-core",
+            "npm:@spartan-ng/ui-menu-brain",
+            "npm:@spartan-ng/ui-switch-brain",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@spartan-ng/cli",
+            "npm:@types/jasmine",
+            "npm:autoprefixer",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:postcss",
+            "npm:tailwind-merge",
+            "npm:tailwindcss",
+            "npm:tailwindcss-animate",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "postcss.config.js",
+          "hash": "1579725330904862112"
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "2403630479919530944"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "13617518084560150355"
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "10175088394129525775"
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "11009605093077255235"
+        },
+        {
+          "file": "src/app/pages/auth/auth.component.html",
+          "hash": "11409784361937694453"
+        },
+        {
+          "file": "src/app/pages/auth/auth.component.ts",
+          "hash": "1922626941230479585"
+        },
+        {
+          "file": "src/app/pages/connections/connections.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/connections/connections.component.html",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/connections/connections.component.ts",
+          "hash": "6932317512313675942"
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.html",
+          "hash": "4894489786295920269"
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.ts",
+          "hash": "6036218583869285818"
+        },
+        {
+          "file": "src/app/routes.ts",
+          "hash": "231372089942057644"
+        },
+        {
+          "file": "src/app/shared/directives/click-stop.directive.ts",
+          "hash": "7524697633700148983"
+        },
+        {
+          "file": "src/app/shared/slider/slider-range.directive.ts",
+          "hash": "10800343720259715351"
+        },
+        {
+          "file": "src/app/shared/slider/slider.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/slider/slider.component.html",
+          "hash": "8142009488133320274"
+        },
+        {
+          "file": "src/app/shared/slider/slider.component.ts",
+          "hash": "3184878597171672460"
+        },
+        {
+          "file": "src/app/shared/slider/slider.service.ts",
+          "hash": "3407608683527381736"
+        },
+        {
+          "file": "src/app/shared/ui-kit/button.directive.ts",
+          "hash": "15670775872740223675"
+        },
+        {
+          "file": "src/app/shared/ui-kit/ghost-input/directives/ghost-input-label.directive.ts",
+          "hash": "2192573488713704998"
+        },
+        {
+          "file": "src/app/shared/ui-kit/ghost-input/directives/ghost-input-root.directive.ts",
+          "hash": "665579243002793912"
+        },
+        {
+          "file": "src/app/shared/ui-kit/ghost-input/directives/ghost-input.directive.ts",
+          "hash": "12399919135569865709"
+        },
+        {
+          "file": "src/app/shared/ui-kit/ghost-input/ghost-input.component.html",
+          "hash": "3726620671768846902"
+        },
+        {
+          "file": "src/app/shared/ui-kit/ghost-input/ghost-input.component.ts",
+          "hash": "8000929608760753118"
+        },
+        {
+          "file": "src/app/shared/ui-kit/ghost-input/index.ts",
+          "hash": "7682125104547059666"
+        },
+        {
+          "file": "src/app/shared/ui-kit/input/index.ts",
+          "hash": "6238792591556916931"
+        },
+        {
+          "file": "src/app/shared/ui-kit/input/input.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/shared/ui-kit/input/input.component.ts",
+          "hash": "16604503619962586360"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-input-helm/src/index.ts",
+          "hash": "487913567356772959"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-input-helm/src/lib/hlm-input-error.directive.ts",
+          "hash": "15093991086408705879"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-input-helm/src/lib/hlm-input.directive.ts",
+          "hash": "2816073000867953055"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-label-helm/src/index.ts",
+          "hash": "11520514252818889827"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-label-helm/src/lib/hlm-label.directive.ts",
+          "hash": "8603319662311299847"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/index.ts",
+          "hash": "13241682308641820299"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-bar-item.directive.ts",
+          "hash": "2642040568501069483"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-bar.component.ts",
+          "hash": "7000402101697594363"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-group.component.ts",
+          "hash": "2390418594404509437"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item-check.component.ts",
+          "hash": "4744939066583439244"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item-checkbox.directive.ts",
+          "hash": "12090409625202265650"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item-icon.directive.ts",
+          "hash": "9465491399659124385"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item-radio.component.ts",
+          "hash": "14803246319888263650"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item-radio.directive.ts",
+          "hash": "3365846709515902615"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item-sub-indicator.component.ts",
+          "hash": "8271578020556473367"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-item.directive.ts",
+          "hash": "7948695971895950589"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-label.component.ts",
+          "hash": "6639147067124012486"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-separator.component.ts",
+          "hash": "839235661133833106"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu-shortcut.component.ts",
+          "hash": "11655349277782237636"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-menu.component.ts",
+          "hash": "4243554475804977681"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-menu-helm/src/lib/hlm-sub-menu.component.ts",
+          "hash": "3063505504893888821"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-switch-helm/src/index.ts",
+          "hash": "8908252162056432692"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-switch-helm/src/lib/hlm-switch-thumb.directive.ts",
+          "hash": "14562750052894454583"
+        },
+        {
+          "file": "src/app/shared/ui-kit/spartan-helm/ui-switch-helm/src/lib/hlm-switch.directive.ts",
+          "hash": "10998968625880272165"
+        },
+        {
+          "file": "src/app/shared/ui-kit/switch.component.ts",
+          "hash": "3660338971200343994"
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/css/button.component.css",
+          "hash": "10189404370607278537"
+        },
+        {
+          "file": "src/assets/fonts/dancing-script/DancingScript-Bold.ttf",
+          "hash": "3914731317583053638"
+        },
+        {
+          "file": "src/assets/fonts/dancing-script/DancingScript-Medium.ttf",
+          "hash": "16499093078912806875"
+        },
+        {
+          "file": "src/assets/fonts/dancing-script/DancingScript-Regular.ttf",
+          "hash": "5208824756469463581"
+        },
+        {
+          "file": "src/assets/fonts/dancing-script/DancingScript-SemiBold.ttf",
+          "hash": "6055924230064291175"
+        },
+        {
+          "file": "src/assets/fonts/fonts.css",
+          "hash": "3148153297597390291"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Bold.eot",
+          "hash": "6869194434429043895"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Bold.ttf",
+          "hash": "15942736950033658316"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Bold.woff",
+          "hash": "4694099236231730807"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Bold.woff2",
+          "hash": "10945237800438609089"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-ExtraBold.eot",
+          "hash": "15294973771634676242"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-ExtraBold.ttf",
+          "hash": "2310744092855578359"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-ExtraBold.woff",
+          "hash": "17761574185000694712"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-ExtraBold.woff2",
+          "hash": "10447676080048091014"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Light.eot",
+          "hash": "6312913391090525148"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Light.ttf",
+          "hash": "5894959595625345679"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Light.woff",
+          "hash": "3685409097772514479"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Light.woff2",
+          "hash": "6065734832700084592"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Medium.eot",
+          "hash": "10661114572424362669"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Medium.ttf",
+          "hash": "10382907538863895933"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Medium.woff",
+          "hash": "2472553964899068276"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Medium.woff2",
+          "hash": "6036105849953826170"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Regular.eot",
+          "hash": "1030960167155947250"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Regular.ttf",
+          "hash": "5873117713675268174"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Regular.woff",
+          "hash": "14563133317620743813"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Regular.woff2",
+          "hash": "3619700637204648999"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Semibold.eot",
+          "hash": "11857428253473360457"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Semibold.ttf",
+          "hash": "8812509330736563573"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Semibold.woff",
+          "hash": "15598234325076522944"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Semibold.woff2",
+          "hash": "17402762624383894974"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Thin.eot",
+          "hash": "8681504818307526269"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Thin.ttf",
+          "hash": "17009308497845044390"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Thin.woff",
+          "hash": "16220332201588278787"
+        },
+        {
+          "file": "src/assets/fonts/manrope/Manrope-Thin.woff2",
+          "hash": "5220651458157338539"
+        },
+        {
+          "file": "src/assets/fonts/manrope/stylesheet.css",
+          "hash": "12818149850502725050"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Black.eot",
+          "hash": "14743354768138626059"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Black.ttf",
+          "hash": "15149722224354307662"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Black.woff",
+          "hash": "17191450967395159654"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Black.woff2",
+          "hash": "16838868238267733959"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BlackItalic.eot",
+          "hash": "13677366738201216772"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BlackItalic.ttf",
+          "hash": "2773800905533040672"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BlackItalic.woff",
+          "hash": "16832911761857202224"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BlackItalic.woff2",
+          "hash": "6742565891693936530"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Bold.eot",
+          "hash": "14670213458556870339"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Bold.ttf",
+          "hash": "8050218374823488756"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Bold.woff",
+          "hash": "10423802356476794243"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Bold.woff2",
+          "hash": "14325561046964251198"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BoldItalic.eot",
+          "hash": "7655600900160091677"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BoldItalic.ttf",
+          "hash": "16923611489684164229"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BoldItalic.woff",
+          "hash": "14233336799153798299"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-BoldItalic.woff2",
+          "hash": "5466254816688446359"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBold.eot",
+          "hash": "11135606063940861523"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBold.ttf",
+          "hash": "397561673381970730"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBold.woff",
+          "hash": "18305681204602509865"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBold.woff2",
+          "hash": "15486499683921597452"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBoldItalic.eot",
+          "hash": "15354029127628415693"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf",
+          "hash": "7160618051779900532"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBoldItalic.woff",
+          "hash": "3691972712946008445"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraBoldItalic.woff2",
+          "hash": "13881413690632367678"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLight.eot",
+          "hash": "15208213275364905668"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLight.ttf",
+          "hash": "3968355477404845816"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLight.woff",
+          "hash": "852002631906493374"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLight.woff2",
+          "hash": "14952663540262311252"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLightItalic.eot",
+          "hash": "5142448756054707781"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLightItalic.ttf",
+          "hash": "8158827177262600981"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLightItalic.woff",
+          "hash": "15653012253452582672"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ExtraLightItalic.woff2",
+          "hash": "12441256048711544393"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Italic.eot",
+          "hash": "14458581354042728823"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Italic.ttf",
+          "hash": "13013550436491815032"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Italic.woff",
+          "hash": "1309430738709713791"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Italic.woff2",
+          "hash": "2968039183257664898"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Light.eot",
+          "hash": "13509620227253669759"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Light.ttf",
+          "hash": "11560399853430023567"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Light.woff",
+          "hash": "17974645783447524092"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Light.woff2",
+          "hash": "14513104054404901055"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-LightItalic.eot",
+          "hash": "7646399472175373866"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-LightItalic.ttf",
+          "hash": "1082176215352449788"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-LightItalic.woff",
+          "hash": "2352504882116438382"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-LightItalic.woff2",
+          "hash": "17238071625897538463"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Medium.eot",
+          "hash": "6860518544351384727"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Medium.ttf",
+          "hash": "3015443301467654828"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Medium.woff",
+          "hash": "10043305554028264322"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Medium.woff2",
+          "hash": "18296176973918842626"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-MediumItalic.eot",
+          "hash": "8814439923612712085"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-MediumItalic.ttf",
+          "hash": "12688223987729246519"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-MediumItalic.woff",
+          "hash": "7252042814386442894"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-MediumItalic.woff2",
+          "hash": "9226986891197798408"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Regular.eot",
+          "hash": "8034485003567697915"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Regular.ttf",
+          "hash": "13286921405070129656"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Regular.woff",
+          "hash": "12536478007194690176"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Regular.woff2",
+          "hash": "16720542302424538536"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBold.eot",
+          "hash": "3401493311814321936"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBold.ttf",
+          "hash": "14279863988216831217"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBold.woff",
+          "hash": "14377434131616371879"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBold.woff2",
+          "hash": "9628189147814002155"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBoldItalic.eot",
+          "hash": "16217607946126097480"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf",
+          "hash": "10749094928827026060"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBoldItalic.woff",
+          "hash": "17182380266451180187"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-SemiBoldItalic.woff2",
+          "hash": "9310215527315467450"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Thin.eot",
+          "hash": "10034626165490566192"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Thin.ttf",
+          "hash": "98426971561331666"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Thin.woff",
+          "hash": "16345589510560772098"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-Thin.woff2",
+          "hash": "11007579253777589633"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ThinItalic.eot",
+          "hash": "3527969804801278833"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ThinItalic.ttf",
+          "hash": "12727898165765929997"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ThinItalic.woff",
+          "hash": "11933955266965046615"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/Montserrat-ThinItalic.woff2",
+          "hash": "16751753975616930679"
+        },
+        {
+          "file": "src/assets/fonts/montserrat/stylesheet.css",
+          "hash": "15808344422253711271"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Roboto.ttf",
+          "hash": "10871162415498165815"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Roboto.woff",
+          "hash": "3173961692104335296"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Roboto.woff2",
+          "hash": "13973583825085761707"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoblack.ttf",
+          "hash": "2325806508573750069"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoblack.woff",
+          "hash": "15924310555383651516"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoblack.woff2",
+          "hash": "6874383962577739359"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoblackitalic.ttf",
+          "hash": "628448397143841424"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoblackitalic.woff",
+          "hash": "5920695526609775300"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoblackitalic.woff2",
+          "hash": "4258423710577079633"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotobold.ttf",
+          "hash": "15304270122629869228"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotobold.woff",
+          "hash": "16317281318802719958"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotobold.woff2",
+          "hash": "4506063255732266457"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotobolditalic.ttf",
+          "hash": "6663068591909794055"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotobolditalic.woff",
+          "hash": "16105306704806325974"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotobolditalic.woff2",
+          "hash": "8004897556857490652"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoitalic.ttf",
+          "hash": "12121739489282937660"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoitalic.woff",
+          "hash": "158217200054285327"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotoitalic.woff2",
+          "hash": "4817425752741511671"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotolight.ttf",
+          "hash": "11463656775269611425"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotolight.woff",
+          "hash": "6033796217499827917"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotolight.woff2",
+          "hash": "17667889546563981454"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotolightitalic.ttf",
+          "hash": "13549953354311508281"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotolightitalic.woff",
+          "hash": "8388970666405880344"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotolightitalic.woff2",
+          "hash": "2661426999013730903"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotomedium.ttf",
+          "hash": "6185906373368061521"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotomedium.woff",
+          "hash": "11164712911225411187"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotomedium.woff2",
+          "hash": "14929711877379136857"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotomediumitalic.ttf",
+          "hash": "11043379131445422369"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotomediumitalic.woff",
+          "hash": "3739687948616779075"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotomediumitalic.woff2",
+          "hash": "13296069626310274589"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotothin.ttf",
+          "hash": "902548947783129426"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotothin.woff",
+          "hash": "2107981084495153744"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotothin.woff2",
+          "hash": "2380551611973468231"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotothinitalic.ttf",
+          "hash": "12512174676920552127"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotothinitalic.woff",
+          "hash": "530548597042816505"
+        },
+        {
+          "file": "src/assets/fonts/roboto/Robotothinitalic.woff2",
+          "hash": "8475881896418388501"
+        },
+        {
+          "file": "src/assets/fonts/roboto/roboto.css",
+          "hash": "3972468108719832571"
+        },
+        {
+          "file": "src/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "135816956488872111"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4927504514031276065"
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "9025226275509201370"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "15124171574709075101"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "17720715570942420575"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "17913706819344189581"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "15575553540147145788"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
