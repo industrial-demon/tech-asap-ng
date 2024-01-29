@@ -1,0 +1,17 @@
+.pagination-item {
+  @apply flex
+  hover:bg-slate-200 
+    hover:text-inherit
+    transition-colors 
+    cursor-pointer items-center 
+    first:border-l 
+    w-10 h-10 
+    justify-center 
+    border-r border-grey-15;
+}
+
+.pagination-button {
+  @apply hover:bg-slate-200 
+  hover:text-inherit
+  transition-colors;
+}

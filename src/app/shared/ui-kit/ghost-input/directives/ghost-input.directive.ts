@@ -5,14 +5,15 @@ import { ClassValue } from 'clsx';
 
 const input = cva(
   [
-    'peer block w-full appearance-none border-0 border-b bg-transparent px-0 pt-3 pb-1 text-body-3-r focus:outline-none focus:ring-0',
+    'peer/control block w-full appearance-none border-0 border-b bg-transparent px-0 pt-3 pb-1 text-body-3-r focus:outline-none focus:ring-0',
     'text-[#2D3436]',
+    "focus:border-b-green focus:border-b",
   ],
   {
     variants: {
       invalid: {
         true: ' border-red hover:border-red-400',
-        false: 'focus:grey-100 border-green hover:border-x-green',
+        false: 'focus:grey-100 border-b-green hover:border-x-green',
       },
     },
   }

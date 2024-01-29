@@ -1,4 +1,12 @@
 <div ghostInputRoot>
-  <input ghostInput [value]="value" (input)="onChangeInput($event)" />
-  <label ghostInputLabel>{{ label }}</label>
+  <input
+    (click)="markAsTouched()"
+    #ghostInput
+    ghostInput
+    [(ngModel)]="value"
+    (ngModelChange)="onChangeInput($event)"
+  />
+  <label ghostInputLabel [isValue]="!!value">{{ label }}</label>
+
+  <span *ngIf="error" class="text-red text-[12px]"> {{ error }}</span>
 </div>

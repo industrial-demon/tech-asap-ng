@@ -1,0 +1,24 @@
+<nav class="nav-panel">
+  <ul class="nav-list flex gap-10">
+    @for (navLink of navLinks; track navLink.id) {
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="navLink.href"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="nav-link-icon">
+          <svg-icon
+            [name]="navLink.icon"
+            class="w-[27px] h-[27px] fill-inherit"
+          ></svg-icon>
+        </span>
+
+        <span class="nav-link-title">{{ navLink.title }}</span>
+      </a>
+    </li>
+    }
+  </ul>
+</nav>

@@ -1,27 +1,35 @@
 import { Directive, Input, computed, signal } from '@angular/core';
 import { hlm } from '@spartan-ng/ui-core';
+import { cva } from 'class-variance-authority';
 import { ClassValue } from 'clsx';
 
+const switchCss = cva([
+  'relative overflow-hidden',
+  'group inline-flex',
+  'items-center justify-around',
+  'peer h-[35px] w-[65px] shrink-0 cursor-pointer',
+  'bg-white',
+  'rounded-full border-2 border-gray-300',
+  'transition-colors',
+  'data-[state=checked]:bg-grey-80',
+]);
+
 @Directive({
-	selector: 'brn-switch[hlm],[hlmSwitch]',
-	standalone: true,
-	host: {
-		'[class]': '_computedClass()',
-	},
+  selector: 'brn-switch[hlm],[hlmSwitch]',
+  standalone: true,
+  host: {
+    '[class]': '_computedClass()',
+  },
 })
 export class HlmSwitchDirective {
-	private readonly _userCls = signal<ClassValue>('');
-	@Input()
-	set class(userCls: ClassValue) {
-		this._userCls.set(userCls);
-	}
+  private readonly _userCls = signal<ClassValue>('');
+  @Input()
+  set class(userCls: ClassValue) {
+    this._userCls.set(userCls);
+  }
 
-	protected _computedClass = computed(() => this._generateClass());
-	private _generateClass() {
-		return hlm(
-			['bg-red'],
-			'group inline-flex h-[24px] w-[44px] shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-red data-[state=unchecked]:bg-green',
-			this._userCls(),
-		);
-	}
+  protected _computedClass = computed(() => this._generateClass());
+  private _generateClass() {
+    return hlm(switchCss(), this._userCls());
+  }
 }

@@ -1,0 +1,16 @@
+<div class="flex rounded-lg border border-grey-15 overflow-hidden">
+  <button class="pagination-button pl-4 pr-3" (click)="onPrevClick()">Previous</button>
+
+  <ul class="flex">
+    @for(item of items; track $index){
+    <li
+      [ngClass]="{ 'bg-green text-white': getActivePage(item) }"
+      class="pagination-item"
+      (click)="onPageClick(item)"
+    >
+      {{ item }}
+    </li>
+    }
+  </ul>
+  <button class="pagination-button px-3" (click)="onNextClick()">Next</button>
+</div>

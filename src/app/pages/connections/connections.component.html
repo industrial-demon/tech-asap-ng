@@ -1,0 +1,41 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    @if(data$ | async; as pageView){ @for (connection of pageView.result; track
+    connection.id) {
+    <tr>
+      <td>
+        <li>{{ connection.name }}</li>
+      </td>
+      <td>
+        <li>{{ connection.createTime }}</li>
+      </td>
+    </tr>
+    }
+
+    <tr>
+      <td colspan="2">
+        <div class="flex justify-end">
+          <ns-pagination
+            [currentPage]="page"
+            (changedPage)="connectionService.setPage($event)"
+            [lastPage]="pageView.meta.lastPage"
+            [next]="pageView.meta.next"
+            [prev]="pageView.meta.prev"
+          >
+          </ns-pagination>
+        </div>
+      </td>
+    </tr>
+
+    }@else {
+      <h1>Loading</h1>
+    }
+  </tbody>
+</table>
+{{ page }}

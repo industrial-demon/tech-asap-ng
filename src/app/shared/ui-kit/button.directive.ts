@@ -55,7 +55,7 @@ type Button = Required<
 type ButtonVariant<K extends keyof Button> = Exclude<Button[K], null>;
 
 @Directive({
-  selector: '[nsButton]',
+  selector: '[ns-button]',
   standalone: true,
 })
 export class ButtonDirective implements OnChanges {
@@ -77,7 +77,9 @@ export class ButtonDirective implements OnChanges {
   @HostBinding('class')
   private classes = '';
 
-  constructor() {}
+  constructor() {
+
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     this.classes = button({

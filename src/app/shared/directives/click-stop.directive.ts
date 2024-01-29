@@ -1,11 +1,5 @@
 import {
   Directive,
-  Output,
-  EventEmitter,
-  Renderer2,
-  OnInit,
-  OnDestroy,
-  ElementRef,
   HostListener,
 } from '@angular/core';
 

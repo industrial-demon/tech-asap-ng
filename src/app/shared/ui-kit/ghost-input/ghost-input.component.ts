@@ -1,45 +1,108 @@
-import { CommonModule } from '@angular/common';
 import {
+  AfterViewInit,
   Component,
+  ElementRef,
   EventEmitter,
+  InjectionToken,
   Input,
+  OnChanges,
   OnInit,
   Output,
+  SimpleChanges,
+  ViewChild,
   booleanAttribute,
+  forwardRef,
   signal,
 } from '@angular/core';
-import { cva } from 'class-variance-authority';
 import { GhostInputLabelDirective } from './directives/ghost-input-label.directive';
 import { GhostInputPrimitiveDirective } from './directives/ghost-input.directive';
 import { GhostInputRootDirective } from './directives/ghost-input-root.directive';
+import {
+  ControlValueAccessor,
+  FormsModule,
+  NG_VALUE_ACCESSOR,
+} from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'ns-ghost-input',
+  selector: 'ghost-input',
   standalone: true,
   templateUrl: './ghost-input.component.html',
   imports: [
+    FormsModule,
+    CommonModule,
     GhostInputRootDirective,
     GhostInputLabelDirective,
     GhostInputPrimitiveDirective,
   ],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      multi: true,
+      useExisting: GhostInputComponent,
+    },
+  ],
 })
-export class GhostInputComponent {
+export class GhostInputComponent
+  implements ControlValueAccessor, AfterViewInit, OnChanges
+{
+  input!: string;
+
+  onChange = (value: any) => {};
+  onTouched = () => {};
+
+  touched = false;
+  disabled = false;
+
+  @ViewChild('ghostInput')
+  inputEl?: ElementRef<HTMLInputElement>;
+
   @Input()
   label: string = '';
 
   @Input()
   value: string = '';
 
-  @Output() onChangeValue = new EventEmitter();
-
-  protected _checked = signal(false);
+  @Input()
+  error?: string;
 
   @Input({ transform: booleanAttribute })
-  set checked(value: boolean) {
-    this._checked.set(value);
+  autoFocus = false;
+
+  @Output() onChangeValue = new EventEmitter();
+
+  writeValue(value: any) {
+    this.value = value;
   }
 
-  onChangeInput(event: Event) {
-    this.onChangeValue.emit((event.target as HTMLInputElement).value);
+  registerOnChange(fn: any) {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(onTouched: any) {
+    this.onTouched = onTouched;
+  }
+
+  markAsTouched() {
+    if (!this.touched) {
+      this.onTouched();
+      this.touched = true;
+    }
+  }
+
+  onChangeInput(value: string) {
+      this.value = value
+      this.onChange(value);
+      this.onChangeValue.emit(this.value);
+  }
+
+  ngAfterViewInit(): void {
+    if (this.autoFocus) {
+      this.inputEl?.nativeElement.focus();
+    }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes);
   }
 }

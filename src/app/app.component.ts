@@ -5,25 +5,30 @@ import { SliderComponent } from './shared/slider/slider.component';
 import { SliderService } from './shared/slider/slider.service';
 import { ConnectionsComponent } from './pages/connections/connections.component';
 
-
 import { RouterModule } from '@angular/router';
 import { ButtonDirective } from './shared/ui-kit/button.directive';
 import { Switch } from './shared/ui-kit/switch.component';
 import { InputDirective } from './shared/ui-kit/input/input.component';
 import { GhostInputComponent } from './shared/ui-kit/ghost-input';
-
+import { PageLayoutComponent } from './features/page-layout/page-layout.component';
+import { environment } from './../environments/environment';
+import { NavBarComponent } from './features/nav-bar/nav-bar.component';
+import { SvgIconComponent } from '~/ui-kit/svg-icon/svg-icon.component';
 @Component({
   selector: 'ns-root',
   standalone: true,
   imports: [
     RouterModule,
     CommonModule,
-    ButtonDirective,
+    PageLayoutComponent,
     SliderComponent,
     ConnectionsComponent,
     Switch,
     GhostInputComponent,
     InputDirective,
+    ButtonDirective,
+    NavBarComponent,
+    SvgIconComponent,
   ],
   providers: [],
   templateUrl: './app.component.html',

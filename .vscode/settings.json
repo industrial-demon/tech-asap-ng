@@ -22,7 +22,7 @@
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
-  "tailwindCSS.classAttributes": ["className", ".*createStyles*", "class"],
+  "tailwindCSS.classAttributes": ["className", ".*createStyles*", "class", ".*twMerge*"],
   "editor.quickSuggestions": {
     "strings": true
   },

@@ -1,0 +1,15 @@
+<header class="h-24 flex shadow-headerBottom dark:bg-gray-700">
+
+  <div class="bg-green flex h-full gap-2 justify-center items-center text-white uppercase w-[358px] text-[40px]">
+    <span class="font-light">Tech</span>
+    <span class="font-semibold">Asap</span>
+  </div>
+
+  <div class="mx-20">
+    <ns-nav-bar></ns-nav-bar>
+  </div>
+
+  <div>
+    <switch [checked]="!isLightTheme" (onCheckedChange)="onThemeSwitchChange()"></switch>
+  </div>
+</header>

@@ -1,9 +1,18 @@
+<!-- <header>
+  <ns-nav-bar></ns-nav-bar>
+  @defer () {
+  <svg-icon name="connections-icon" class="fill-red"></svg-icon>
+  }
+  <a routerLink="/connections" ariaCurrentWhenActive="page">Connections</a>
+</header> -->
+<router-outlet></router-outlet>
+
 <main class="p-4">
-  <button nsButton (click)="onClick()" color="green">Hi</button>
-  <button nsButton color="red" filled>Hi</button>
-  <div nsButton color="green" filled>1 1</div>
-  <div nsButton color="blue" filled size="small" rounded="lg">d</div>
-  <div nsButton color="red" transparency filled size="small">d</div>
+  <button (click)="onClick()" color="green">Hi</button>
+  <button ns-button color="red" filled>Hi</button>
+  <div ns-button color="green" filled>1 1</div>
+  <div ns-button color="blue" filled size="small" rounded="lg">d</div>
+  <div ns-button color="red" transparency filled size="small">d</div>
   <hr />
 
   <div class="p-2 bg-slate-200 h-20">
@@ -11,12 +20,15 @@
   </div>
 
   <ns-slider></ns-slider>
-  <connections-page></connections-page>
 
-  <a routerLink="/auth" ariaCurrentWhenActive="page">Log in</a>
-
-  <router-outlet></router-outlet>
+  <a routerLink="/auth" ariaCurrentWhenActive="page"> Log in </a>
   <input inputDirective />
 
-  <ns-ghost-input  label="E-mail"/>
+  <page-layout>
+    <p slot="filters">SOME</p>
+  </page-layout>
+
+  <div class="flex p-1 justify-center">
+   
+  </div>
 </main>
